@@ -16,4 +16,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('personas', PersonaController::class);
     Route::resource('intereses', InteresController::class);
     Route::get('/usuarios', [UserController::class, 'index'])->name('usuarios.index');
+    Route::get('/dashboard', [DashboardController::class, 'index'])
+        ->name('dashboard');
 });
