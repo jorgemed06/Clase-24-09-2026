@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Persona;
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Interes;
 
 class PersonaController extends Controller
 {
@@ -20,7 +22,7 @@ class PersonaController extends Controller
      */
     public function create()
     {
-        $interes = Interes::all();
+        $intereses = Interes::all();
         return view('personas.create', compact('intereses'));
     }
 

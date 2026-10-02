@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Interes;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class InteresController extends Controller
 {
